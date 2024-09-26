@@ -2,6 +2,13 @@ import _ from "lodash";
 import { LowSync, MemorySync } from "lowdb";
 import { JSONFileSync } from "lowdb/node";
 
+export interface Database {
+  rooms: Room[];
+  messages: Message[];
+  users : User[];
+
+}
+
 export interface Room {
   roomId: string;
   roomName: string;
