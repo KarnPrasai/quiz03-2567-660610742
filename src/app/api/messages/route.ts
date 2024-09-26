@@ -22,7 +22,7 @@ export const GET = async (request: NextRequest) => {
     );
   }
   
-  let filteredMessage = (<Database>DB).messages.filter(
+  const filteredMessage = (<Database>DB).messages.filter(
     (x) => x.roomId === roomId
   )
   

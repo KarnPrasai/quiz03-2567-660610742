@@ -1,8 +1,8 @@
-import { DB , Database , readDB, Room, User, writeDB } from "@lib/DB";
+import { DB , Database , readDB, writeDB } from "@lib/DB";
 import { checkToken } from "@lib/checkToken";
 import { nanoid } from "nanoid";
 import { NextRequest, NextResponse } from "next/server";
-import { platform } from "os";
+//import { platform } from "os";
 
 export const GET = async () => {
   readDB();
